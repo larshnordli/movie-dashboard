@@ -44,7 +44,7 @@ Start the application, go to the home/root page if not already there, and open W
 We see that routes rendered through the built-in <code>Link</code>-component generates network requests only once, and is later cached.
 
 The "Profile" page will cause a full page reload because it is not using the build-in navigation element.
-</detail>
+</details>
 
 ### Page, Layout, Loading and Error
 - Navigate to "Movies"
@@ -59,7 +59,7 @@ Refresh the page a few times. What do you see?
 When we use the React.Suspense with a fallback, the loading-component will be shown while a network request is pending. It is recommended to use the file name conventions, and especially on Route Segments.
 
 Bonus assignment: Redo the procedure to handle *unexpected runtime errors*. "Mess up" the API-url or similar to cause an error.
-</detail>
+</details>
 
 ## Debugging
 <details>
@@ -84,7 +84,7 @@ If you would like to explore styling and visuals, do these assignments:
 Supply values to the <code>width</code> and <code>height</code> props for the component as you see fit. What do you see?
 
 Since Next does not have access to remote images, we need to specify the width and height manually (this is automatic for local images). The reason why it is necessary to specify these values is to prevent a "layout shift" (umbrella term). Note that remote image sources must be "allow-listed" in `next.config.js` file.
-</detail>
+</details>
 
 ## CSS
 - Open the All Movies page
@@ -100,4 +100,4 @@ Global styles apply to every route from where the stylesheet is imported, and sh
 "Traditionally", we would expect that rules defined for an class name will override rules provided for a "sub"-class-name (which one takes precedence can depend on the order top-to-bottom).
 
 Next.js will scope the styles for the component through generating unique class names to avoid "same-name-collisions".
-</detail>
+</details>

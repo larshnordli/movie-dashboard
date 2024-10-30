@@ -79,7 +79,7 @@ If you would like to explore styling and visuals, do these assignments:
 
 <details>
     <summary>Assignment and explanation</summary>
-    Assignment: Replace the native <code>img</code>-element with the <code>Image</code>`-component from <code>next/image</code>. What do you notice when you refresh the page?
+    Assignment: Replace the native <code>img</code>-element with the <code>Image</code>-component from <code>next/image</code>. What do you notice when you refresh the page?
 
 Supply values to the <code>width</code> and <code>height</code> props for the component as you see fit. What do you see?
 

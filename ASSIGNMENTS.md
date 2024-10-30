@@ -25,7 +25,7 @@ Also note that the MoviePoster-component is now a Client Component, even though 
     
 Environment variables, like API keys or other secrets, are by default available to Server Components are are evaluated at the server and not transported to the browser. Client Components will have access to environment variables with the NEXT_PUBLIC-prefix. To avoid keys and secrets being shared to the client, always make sure to not include the prefix if the client does not need it, and use the key on the server instead.
 
-Optional: you can remove the NEXT_PUBLI-prefic from the environment variable if you want (and is recommended), but the Server Component will have no need to transport the env var to the browser.
+Optional: you can remove the NEXT_PUBLIC-prefic from the environment variable if you want (and is recommended), but the Server Component will have no need to transport the env var to the browser.
 </details>
 
 ## Built-in Components
@@ -69,7 +69,7 @@ Bonus assignment: Redo the procedure to handle *unexpected runtime errors*. "Mes
 Server components and "console logs" will not be displayed in the browser - breakpoints and logging for Server Components needs to be done through attachine a debugger.
 
 Client Components can be debugged in the web browser's DevTools -> Sources/Debugger tab, as one might be used to from "classic" React.
-</detail>
+</details>
 
 If you would like to explore styling and visuals, do these assignments:
 

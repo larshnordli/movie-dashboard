@@ -7,7 +7,7 @@ Start the application and open Web Tools > Network tab (through F12 or right-cli
 
 <details>
     <summary>Assignment and explanation</summary>
-    Assignment: Open the file `movies/[id]/page.jsx` and convert it into a Client Component. What do you notice?
+    Assignment: Open the file <code>movies/[id]/page.jsx</code> and convert it into a Client Component. What do you notice?
 
     Server Components will be pre-rendered in build time and results in a "full HTML page". When we convert it into a Client Component, the component will be rendered in the browser and will act as a React Component (with re-rendering behavior demonstrated here) and allow you to use "hooks" and other "React features".
 
@@ -38,9 +38,9 @@ Start the application, go to the home/root page if not already there, and open W
 
 <details>
     <summary>Assignment and explanation</summary>
-    Assignment: Change the "Profile" link to use the `<Link>`-component, refresh the page if not already automatically refreshed, and redo the procedure. You should notice that all pages only cause a network request once and no full page reload is performed.
+    Assignment: Change the "Profile" link to use the <code>Link<code>-component, refresh the page if not already automatically refreshed, and redo the procedure. You should notice that all pages only cause a network request once and no full page reload is performed.
 
-    We see that routes rendered through the built-in `<Link>`-component generates network requests only once, and is later cached.
+    We see that routes rendered through the built-in <code>Link</code>-component generates network requests only once, and is later cached.
 
     The "Profile" page will cause a full page reload because it is not using the build-in navigation element.
 </detail>
@@ -51,19 +51,8 @@ Start the application, go to the home/root page if not already there, and open W
 <details>
     <summary>Assignment and explanation</summary>
     Assignment: Create a new component Loading in the "all movies" directory, and return a text (f.ex. "Loading...").
-    Import the Loading-component and wrap the rendering logic of the "all movies"-component in a React.Suspense-component, providing `<Loading/>` component as a prop "fallback". It should look something like this:
+    Import the Loading-component and wrap the rendering logic of the "all movies"-component in a React.Suspense-component, providing <cpde>Loading</code> component as a prop "fallback".
 
-    ```jsx
-    // app\movies\page.jsx
-    import Loading from "./loading";
-    ...
-        return (
-            <>
-                <h2>All Movies</h2>
-                <React.Suspense fallback={<Loading/>}>
-                <ol>
-    ...
-    ```
     Refresh the page a few times. What do you see?
 
     When we use the React.Suspense with a fallback, the loading-component will be shown while a network request is pending. It is recommended to use the file name conventions, and especially on Route Segments.
@@ -89,9 +78,9 @@ If you would like to explore styling and visuals, do these assignments:
 
 <details>
     <summary>Assignment and explanation</summary>
-    Assignment: Replace the native `<img>`-element with the `<Image>`-component from `next/image`. What do you notice when you refresh the page?
+    Assignment: Replace the native <code>img</code>-element with the <code>Image</code>`-component from <code>next/image</code>. What do you notice when you refresh the page?
 
-    Supply values to the `width` and `height` props for the component as you see fit. What do you see?
+    Supply values to the <code>width</code> and <code>height</code> props for the component as you see fit. What do you see?
 
     Since Next does not have access to remote images, we need to specify the width and height manually (this is automatic for local images). The reason why it is necessary to specify these values is to prevent a "layout shift" (umbrella term). Note that remote image sources must be "allow-listed" in `next.config.js` file.
 </detail>

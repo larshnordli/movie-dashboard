@@ -7,13 +7,13 @@ Start the application and open Web Tools > Network tab (through F12 or right-cli
 
 <details>
     <summary>Assignment and explanation</summary>
-    Assignment: Open the file <code>movies/[id]/page.jsx</code> and convert it into a Client Component. What do you notice?
+Assignment: Open the file <code>movies/[id]/page.jsx</code> and convert it into a Client Component. What do you notice?
 
-    Server Components will be pre-rendered in build time and results in a "full HTML page". When we convert it into a Client Component, the component will be rendered in the browser and will act as a React Component (with re-rendering behavior demonstrated here) and allow you to use "hooks" and other "React features".
+Server Components will be pre-rendered in build time and results in a "full HTML page". When we convert it into a Client Component, the component will be rendered in the browser and will act as a React Component (with re-rendering behavior demonstrated here) and allow you to use "hooks" and other "React features".
 
-    Be aware that async/await is not supported in Client Components (you will se an error in the Console), although it practically works in this case. To solve this, we would need to split the data fetching and rendering in two different (type of) components.
+Be aware that async/await is not supported in Client Components (you will se an error in the Console), although it practically works in this case. To solve this, we would need to split the data fetching and rendering in two different (type of) components.
 
-    Also note that the MoviePoster-component is now a Client Component, even though it is not marked as such through the "use client"-directive. This is because it is imported into and is a child of a Client Component.
+Also note that the MoviePoster-component is now a Client Component, even though it is not marked as such through the "use client"-directive. This is because it is imported into and is a child of a Client Component.
 </details>
 
 ### Environment Vars and Secrets
@@ -38,10 +38,8 @@ Start the application, go to the home/root page if not already there, and open W
 
 <details>
     <summary>Assignment and explanation</summary>
-    Assignment: Change the "Profile" link to use the <code>Link<code>-component, refresh the page if not already automatically refreshed, and redo the procedure. You should notice that all pages only cause a network request once and no full page reload is performed.
-
+    Assignment: Change the "Profile" link to use the <code>Link</code>-component, refresh the page if not already automatically refreshed, and redo the procedure. You should notice that all pages only cause a network request once and no full page reload is performed.
     We see that routes rendered through the built-in <code>Link</code>-component generates network requests only once, and is later cached.
-
     The "Profile" page will cause a full page reload because it is not using the build-in navigation element.
 </detail>
 
